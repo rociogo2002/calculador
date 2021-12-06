@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.calculator{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    border: 1px solid gray;
+
+}
+.calculator-display{
+    padding: 25px 15px;
+    width: 100%;
+    text-align: right;
+    border: 1px solid gray;
+    overflow-x: auto;
+}
+.calculator-keypad{
+    display: flex;
+
+
+}
+body{
+    background-color: rgb(51, 32, 9);
+}
