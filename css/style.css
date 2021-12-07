@@ -3,6 +3,10 @@
     padding: 0;
     margin:0;
 }
+html{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 62.5%;
+}
 .container{
     display: flex;
     justify-content: center;
@@ -12,8 +16,10 @@
 .calculator{
     display: flex;
     flex-direction: column;
-    width: 500px;
-    border: 1px solid gray;
+    width: 400px;
+    border: 3px solid gray;
+    border-radius: 10px;
+    font-size: 2rem;
 
 }
 .calculator-display{
@@ -25,9 +31,46 @@
 }
 .calculator-keypad{
     display: flex;
+    width: 100%;
 
 
 }
-body{
-    background-color: rgb(51, 32, 9);
+.keypad-numbers{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+.keypad-button{
+    width: 25%;
+    padding: 15px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    border: 3px rgb(158, 55, 55)y;
+    border-radius: 120px;
+}
+.keypad-button:hover {
+    cursor: pointer;
+    background-color: rgb(182, 178, 178);
+   }
+.keypad-button.yellow{
+    background-color: yellow;
+}
+.keypad-button.large{
+    width: 50%;
+
+}
+.keypad-button.dark{
+    background-color: gray;
+}
+h1{
+    font-size: 3rem;
+    text-shadow: #555 2px 2px 3px;
+    margin-top: 60px;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    margin-top: 10px;
 }
